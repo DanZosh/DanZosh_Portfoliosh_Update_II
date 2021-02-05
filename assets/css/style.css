@@ -208,7 +208,18 @@ footer ul{
   position:relative;
   opacity: 0.7;
 }
-
+.sunDial {
+  height: 300px;
+  /* width: 100%; */
+  margin-bottom: 25px;
+  background-image: url("../images/15_sunDial.png");
+  /* background-size:cover resizes the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
+  background-size: cover;
+  background-position: center;
+  overflow:hidden;
+  position:relative;
+  opacity: 0.7;
+}
 .taskday {
   height: 150px;
   /* width: 47.5%; */
