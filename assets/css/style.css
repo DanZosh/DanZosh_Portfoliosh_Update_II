@@ -1,0 +1,311 @@
+:root{
+  --grey: #31343e;
+  --teal:#80cecf;
+  --blue: #37587a;
+  --white: #eeeef8;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--white);
+}
+
+.header1{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  height:55px;
+  width:100%;
+  background-color: var(--grey);
+  padding: 35px 0;
+}
+
+.header1 h1{
+  /* learnatino */
+  width:auto;
+  color: var(--grey);
+  font-size: 40px;
+  background-color: var(--teal);
+  padding: 3px 3px 5px 50px;
+  margin:3px 0;
+}
+
+.header1 nav{
+  /* about me work contact me resume */
+  width: auto;
+  color: var(--teal);
+  margin-right: 70px;
+  margin-top:20px;
+}
+
+.header1 li{
+  /* this keeps the nav links inline */
+  display:inline-block;
+  padding: 2px 6px;
+  border-bottom: 3px solid;
+}
+.header1 a{
+  /* this keeps the nav links inline */
+  display:inline-block;
+  padding: 2px 6px;
+  border-bottom: 3px solid;
+  text-decoration:none;
+  color: var(--teal)
+
+}
+
+.header2{
+  display:flex;
+  position:relative;
+}
+
+.headshot{
+  width: 190px;
+  /* max-width: 100%; */
+  height:190px;
+  border: 10px solid var(--grey);
+  border-radius: 100%;
+  background-image: url("../images/HeadshotDanMaier.jpg");
+  position:absolute;
+  background-size:cover;
+  background-position:center;
+  left:48px;
+  bottom:20px;
+
+
+}
+.hero {
+  height: 175px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/coolBackground.jpg");
+  /* background-size:cover resizes the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
+  background-size: cover;
+  background-position: center;
+}
+
+.header2 h2{
+    /* Cool subtitle here */
+    color: var(--grey);
+    font-size: 28px;
+    background-color: var(--teal);
+    padding: 3px;
+    position:absolute;
+    bottom:25px;
+    right:82px;
+    
+  }
+
+  main{
+    display:flex;
+    flex-direction:column;
+    margin-left: 100px;
+  }
+
+.container{
+  display:flex;
+  justify-content:stretch;
+  width:100%;
+  padding: 5px 0;
+  margin-top: 10px;
+
+}
+
+aside{
+  text-align: right;
+  padding: 10px 3px 0 0;
+}
+.sideborder{
+  border-left: 3px solid var(--blue);
+  padding:35px 40px;
+}
+h1{
+  color: var(--blue);
+  font-size: 40px;
+  margin-left: 10px;
+  width: 200px;
+
+}
+
+footer a{
+  display:inline;
+  color: var(--blue);
+  text-decoration:none;
+  font-size:14px;
+  color: var(--grey);
+  padding: 2px 6px;
+  border-bottom: 3px solid var(--blue);
+  align-items:center;
+  /* line-height: 1em; */
+}
+
+footer ul{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  width:100%
+}
+/* footer a{
+  text-decoration: none;
+  display:inline;
+  font-size:14px;
+  color: var(--grey);
+  padding: 2px 6px;
+  border-bottom: 3px solid var(--blue);
+  align-items:center;
+} */
+
+
+/* Classes below */
+
+.thegrid{
+  display:flex;
+  flex-direction: column;
+}
+
+.thesmallgrid{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap:wrap;
+}
+.article1{
+  border:3px solid var(--teal);
+  /* width:100%; */
+
+}
+.article2{
+  border:3px solid var(--teal);
+  width:45%;
+  flex:2 1 auto;
+  margin: 3px;
+
+}
+.littlebox{
+  background-color: var(--teal);
+  width: auto;
+  position:absolute;
+  bottom:1em;
+  left:0px;
+  padding: 8px;
+  color: var(--grey)
+
+}
+
+.littlebox detail{
+  font-size: 10px;
+}
+
+.breweryHopper {
+  height: 300px;
+  /* width: 100%; */
+  margin-bottom: 25px;
+  background-image: url("../images/7_homeBrew.png");
+  /* background-size:cover resizes the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
+  background-size: cover;
+  background-position: center;
+  overflow:hidden;
+  position:relative;
+  opacity: 0.7;
+}
+
+.taskday {
+  height: 150px;
+  /* width: 47.5%; */
+  /* margin-bottom: 25px; */
+  background-image: url("../images/5_taskday.png");
+  /* background-size:cover resizes the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
+  background-size: cover;
+  background-position: center;
+  overflow:hidden;
+  position:relative;
+  opacity: 0.7;
+}
+
+.weatherDash {
+  height: 150px;
+  /* width: 50%; */
+  background-image: url("../images/6_weatherDash.png");
+  /* background-size:cover resizes the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
+  background-size: cover;
+  background-position: center;
+  overflow:hidden;
+  position:relative;
+  opacity: 0.7;
+}
+.passwordGenerator {
+  height: 150px;
+  /* width: 50%; */
+  background-image: url("../images/3_passwordGenerator.png");
+  /* background-size:cover resizes the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
+  background-size: cover;
+  background-position: center;
+  overflow:hidden;
+  position:relative;
+  opacity: 0.7;
+}
+.blurger{
+  height: 150px;
+  /* width: 50%; */
+  /* margin-bottom: 25px; */
+  background-image: url("../images/13_Blurger.png");
+  /* background-size:cover resizes the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
+  background-size: cover;
+  background-position: center;
+  overflow:hidden;
+  position:relative;
+  opacity: 0.7;
+}
+
+.newBackground:hover{
+  border-bottom: 3px solid var(--teal);
+  background-color: var(--teal);
+  color: var(--grey);
+  cursor:pointer;
+}
+
+.newBackground2:hover{
+
+  background-color: var(--blue);
+  color: var(--white);
+  cursor:pointer;
+}
+.opaque:hover{
+cursor: pointer;
+opacity: 1;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .container{
+    flex-direction:column;
+  }
+  .thesmallgrid{
+    flex-direction: column;
+    width:100%;
+    flex-wrap:nowrap;
+  }
+  .article2{
+    width:100%
+  }
+  aside{
+    /* display:none; */
+    text-align:left;
+    width:auto;
+  }
+  .header1{
+    flex-direction:column;
+    height:auto;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+  }
+  .header2>h2{
+    display:none;
+  }
+  
+  main{
+    margin-left:20px;
+  }
+  h1{
+    width:auto;
+  }
